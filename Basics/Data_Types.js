@@ -65,3 +65,66 @@ console.log(s1 === s2); // true
 /* Bigint -- BigInt is a primitive data type (ES2020) used to represent integers larger than Number.MAX_SAFE_INTEGER. */
 let big = BigInt("123456789012345678901234567890");
 console.log(big)
+
+
+
+// TypeOf
+// ===== Primitive Data Types =====
+// Number
+let num = 42;
+console.log("Number:", typeof num); // number
+
+// String
+let str = "JavaScript";
+console.log("String:", typeof str); // string
+
+// Boolean
+let isTrue = true;
+console.log("Boolean:", typeof isTrue); // boolean
+
+// Undefined
+let t;
+console.log("Undefined:", typeof t); // undefined
+
+// Null (JS bug ⚠️)
+let empty = null;
+console.log("Null:", typeof empty); // object ❌
+
+// Symbol
+let sym = Symbol("id");
+console.log("Symbol:", typeof sym); // symbol
+
+// BigInt
+let big1 = 12345678901234567890n;
+console.log("BigInt:", typeof big1); // bigint
+
+
+// ===== Reference (Non-Primitive) Data Types =====
+
+// Object
+let obj = { name: "Tinku" };
+console.log("Object:", typeof obj); // object
+
+// Array
+let arr = [1, 2, 3];
+console.log("Array:", typeof arr); // object
+
+// Function
+function greet() {}
+console.log("Function:", typeof greet); // function
+
+// Date
+let date = new Date();
+console.log("Date:", typeof date); // object
+
+// Map
+let map = new Map();
+console.log("Map:", typeof map); // object
+
+// Set
+let set = new Set();
+console.log("Set:", typeof set); // object
+
+
+console.log("NaN:", typeof NaN);           // number
+console.log("Infinity:", typeof Infinity); // number
